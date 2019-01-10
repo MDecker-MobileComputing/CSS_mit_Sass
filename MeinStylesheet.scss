@@ -3,6 +3,8 @@
  * CSS übersetzt werden.
  */
 
+
+// Variablen mit den Hintergrundfarben deklarieren.
 $farbe_container    : #FFFF00;
 $farbe_hintergrund  : #00FFFF;
 $farbe_header_footer: #c0c0c0;
@@ -20,11 +22,11 @@ body {
 }
 
 #container {
-    max-width:    960px;   /* "max-width" statt nur "width" */
+    max-width:    960px;               /* "max-width" statt nur "width" */
     background:   $farbe_container;
-    padding:      1.0416666666666665%;    /* =10*100/960 */
+    padding:      10px * 100% / 960px; /* 1.0416666666666665%; */
     margin-left:  auto;
-    margin-right: auto;    /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
+    margin-right: auto;                /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
 }
 
 header {
@@ -34,15 +36,15 @@ header {
 
 article {
     background: $farbe_artikel;
-    width:      680px / 940px * 100%;
+    width:      680px / 940px * 100%; /* 72.340425 */
     float:      left;    
 }
 
 aside {
     background:   $farbe_seitenkasten;
-    width:        26.595744680851062%; /* =250/940*100 */
+    width:        250px / 940px * 100%; /* 26.595744680851062%; */
     float:        right;
-    padding-left: 1.0638297872340425%; /* =10/940*100 */
+    padding-left: 10px / 940px * 100%   /* 1.0638297872340425%; */ 
 }
 
 footer {
