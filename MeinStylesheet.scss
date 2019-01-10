@@ -1,0 +1,52 @@
+/*
+ * Diese Datei muss mit einem Sass-Präprozessor oder Compiler in
+ * CSS übersetzt werden.
+ */
+
+$farbe_container    : #FFFF00;
+$farbe_hintergrund  : #00FFFF;
+$farbe_header_footer: #c0c0c0;
+$farbe_seitenkasten : #FFFFFF;
+$farbe_artikel      : #ffa500;
+
+
+body {
+    font-family: sans-serif;  /* ALLE Schriften ohne Serifen. */
+    background:  $farbe_hintergrund;
+}
+
+#container, header, article, aside, footer {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width:    960px;   /* "max-width" statt nur "width" */
+    background:   $farbe_container;
+    padding:      1.0416666666666665%;    /* =10*100/960 */
+    margin-left:  auto;
+    margin-right: auto;    /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
+}
+
+header {
+    width:      100%;    /* Kann auch weggelassen werden */
+    background: $farbe_header_footer;
+}
+
+article {
+    background: $farbe_artikel;
+    width:      680px / 940px * 100%;
+    float:      left;    
+}
+
+aside {
+    background:   $farbe_seitenkasten;
+    width:        26.595744680851062%; /* =250/940*100 */
+    float:        right;
+    padding-left: 1.0638297872340425%; /* =10/940*100 */
+}
+
+footer {
+    width:      100%;  /* Kann auch weggelassen werden */
+    clear:      both;
+    background: $farbe_header_footer;
+}
