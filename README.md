@@ -7,6 +7,14 @@ for an HTML page with a *Fluid Layout* (which is one of the core techniques for 
 
 ----
 
+## Direct View
+
+The HTML file in this repository can be viewed directly at [this URL](https://mdecker-mobilecomputing.github.io/CSS_mit_Sass/index.html).
+
+<br>
+
+----
+
 ## Generate the CSS file
 
 Install [Sass](https://www.npmjs.com/package/sass) using the *Node Package Manager*:
@@ -14,13 +22,21 @@ Install [Sass](https://www.npmjs.com/package/sass) using the *Node Package Manag
   npm install -g sass
 ````
 The option `-g` installs the package globally, so the program `sass` can be called from different folders on the computer and is not included into the project folder (because it is not needed during runtime).
+
 <br>
 
 Invoke *Sass* to convert the `scss` file into a `css` file that can be included by the `html` file:
 ````
   sass --no-source-map --style=compressed MeinStylesheet.scss docs/MeinStylesheet.css
 ````
-In this repository there is also a Windows batch file named [`scss2css.bat`](scss2css.bat) for this.
 
+<br>
+
+This command is defined in this repo's file `package.json` as script with the name `build`, so you also invoke it as follows:
+````
+  npm run build
+````
+
+<br>
 
 There are also other Sass processors, e.g. [node-sass](https://www.npmjs.com/package/node-sass).
