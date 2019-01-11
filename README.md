@@ -32,9 +32,9 @@ Invoke *Sass* to convert the `scss` file into a `css` file that can be included 
 
 <br>
 
-This command is defined in this repo's file `package.json` as script with the name `build`, so you also invoke it as follows:
+This command is defined in this repo's file `package.json` as script with the name `bauen` (German for "build"), so you also invoke it as follows:
 ````
-  npm run build
+  npm run bauen
 ````
 
 <br>

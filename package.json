@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "sass --no-source-map --style=compressed MeinStylesheet.scss docs/MeinStylesheet.css"
+    "bauen": "sass --no-source-map --style=compressed MeinStylesheet.scss docs/MeinStylesheet.css"
   },
   "repository": {
     "type": "git",
