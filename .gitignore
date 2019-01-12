@@ -1,1 +1,2 @@
+# Source Map Datei, wird von sass erzeugt, wenn es ohne --no-source-map aufgerufen wird
 *.css.map
